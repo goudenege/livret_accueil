@@ -1,0 +1,209 @@
+\documentclass[11pt]{book}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Ancienne version
+%\usepackage[latin1]{inputenc}% pour les accents
+%\usepackage[scale=.85]{geometry}
+%\usepackage[french]{babel}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Nouvelle version pour les accents
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage{textcomp}
+% \usepackage{siunitx}
+\usepackage[scale=.85]{geometry}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\frenchbsetup{StandardLists=true} % pour eviter les conflits entre babel et enumitem
+\usepackage{makeidx,xcolor}
+\usepackage[colorlinks]{hyperref}   % choisir pour la version pdf
+\hypersetup{linkcolor=blue,urlcolor=blue}
+%\usepackage{hyperref}    % choisir pour l'impression (noir et blanc)
+\usepackage{amsmath}
+%\uspackage{amssymb,amsmath,amsfonts,mathptmx}
+\usepackage{eurosym}
+\usepackage{wrapfig,pifont,fancybox,fancyhdr,multicol,enumitem,subfig,booktabs}
+
+\usepackage{graphicx}
+\graphicspath{{../Images/}}
+
+%\renewcommand{\chaptermark}[1]{\bsc{\chaptername~\thechapter{} : #1}}
+\pagestyle{fancy}
+\fancyhead{}
+\fancyhead[RO,LE]{\thepage}
+\fancyhead[RE]{\leftmark}
+\fancyhead[LO]{\rightmark}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.pt}
+
+
+
+
+\newcommand {\lien}[1]{{\small\tt \href{http\string://#1}{http\string://#1}}}
+\newcommand {\liens}[1]{{\small\tt \href{https\string://#1}{https\string://#1}}}
+\newcommand {\lienftp}[1]{{\small\tt \href{ftp\string://#1}{http\string://#1}}}
+\makeindex
+
+
+
+%%%%%%%%%%%%%%
+% La commande ci-dessous ne fait rien mais permet par un simple ctrl+F de retrouver rapidement les
+% informations a verifier a chaque nouvelle edition (noms des directeur.trices par exemple).
+%%%%%%%%%%%%%%
+
+\newcommand{\verifier}[1]{\textcolor{black}{#1}}
+
+
+
+\begin{document}
+\renewcommand{\labelitemi}{$\bullet$}
+\setlist{noitemsep,nosep}
+\setlength{\parindent}{0cm}
+
+{\pagestyle{empty}
+%
+~\hfill\includegraphics[height=1.25cm]{Images/CNRS}\hfill\includegraphics[height=1.25cm]{Images/sfds}\hfill\includegraphics[height=1.25cm]{Images/SMAI}
+\hfill\includegraphics[height=1.25cm]{Images/smf}\hfill\includegraphics[height=1.cm]{Images/inria_fr}\hfill~
+
+~
+
+\vfill
+
+\textbf{\Huge Livret d'accueil des math\'ematicien$\cdot$nes}
+
+\hrule
+
+\begin{flushright}
+\textbf{\Large \verifier{$9^\text{\`eme}$ \'edition -- Avril 2021}}
+\end{flushright}
+
+\vskip 2cm
+
+\begin{center}
+
+\textbf{\large \href{http\string://postes.smai.emath.fr/apres/accueil/index.php}{http\string://postes.smai.emath.fr/apres/accueil/index.php}}
+
+\vfill
+
+\includegraphics[height=2cm]{Images/IHP} 
+
+\bigskip
+
+\textit{\textbf{Ce livret a \'et\'e r\'edig\'e par des b\'en\'evoles
+et n'a aucune valeur officielle.}}
+
+\textit{\textbf{La journ\'ee d'accueil est h\'eberg\'ee par l'IHP.}}
+
+%\textit{\textbf{La reproduction de ce livret est assur\'ee par la FSMP.}}
+\end{center}
+
+\newpage
+
+~
+
+\newpage
+
+\tableofcontents
+
+\newpage
+}
+
+\setlength{\parskip}{.15cm}
+
+\chapter*{Introduction}
+
+La journ\'ee d'accueil des nouveaux et nouvelles recrut\'e$\cdot$es en math\'ematiques a pour vocation de regrouper
+tou$\cdot$tes les chercheuses et chercheurs ainsi que les enseignant$\cdot$es-chercheur$\cdot$ses nouvellement en poste afin de leur faire d\'ecouvrir
+les rouages de la communaut\'e math\'ematique~: pr\'esentation des diff\'erentes carri\`eres, 
+intervention des grands acteurs (organismes de recherche, soci\'et\'es savantes, associations)
+et des solutions de financement de projets. 
+
+Organis\'ee par des b\'en\'evoles math\'ematicien$\cdot$nes, cette journ\'ee permet 
+\`a ces jeunes recrut\'e$\cdot$es de s'int\'egrer et de nourrir leur sentiment d'appartenance
+\`a la communaut\'e des math\'ematiques dans lequel ils ou elles s'investissent pour leur bien et le bien de leurs coll\`egues.
+L'investissement b\'en\'evole n'est en effet pas contradictoire avec la r\'eussite de la carri\`ere professionnelle,
+il y concourt et l'enrichit.
+
+Pour aider les nouveaux et nouvelles recrut\'e$\cdot$es, les \'equipes successives d'organisation de cette journ\'ee
+ont r\'edig\'e et mis \`a jour ce livret, dont l'ambition est d'\^etre factuel mais qui n'a aucune valeur officielle. 
+Les diff\'erentes versions sont consultables sur le site de l'Op\'eration Postes, rubrique ``APRES''. 
+Si l'organisation future de notre communaut\'e se trouvait profond\'ement boulevers\'ee,
+au point qu'une simple mise \`a jour ne soit pas
+possible, ce texte aura au moins le m\'erite de rappeler
+ce qu'elle \'etait avant ces r\'eformes.
+
+M\^eme s'il vise les nouveaux et nouvelles ma\^\i  tres de conf\'erences et
+charg\'e$\cdot$es de recherche, ce texte est bien entendu destin\'e \`a une
+large diffusion sous forme \'electronique. Il contient notamment
+beaucoup de liens vers des sites web qui pr\'esentent en d\'etail
+des points particuliers. Nous pensons pr\'ef\'erable de renvoyer le
+lecteur vers la source de l'information, lorsqu'elle existe,
+plut\^ot que d'int\'egrer cette source dans un texte qui serait tr\`es long et
+risquerait de devenir rapidement obsol\`ete.
+
+Nous invitons les personnes qui constateraient des liens rompus ou
+des informations n\'eces\-si\-tant une mise \`a jour \`a nous en
+faire part par courrier \'electronique adress\'e \`a~:
+\href{mailto:accueil.mcf.cr@gmail.com}{\texttt{accueil.mcf.cr@gmail.com}}.
+
+Nous avons essay\'e de d\'etailler l'organisation de chaque structure~:
+qui la dirige, qui en fait partie, quel en est le processus de
+nomination~; de plus, dans la mesure du possible nous avons tent\'e
+d'obtenir une information sur le bilan des actions ant\'erieures.
+Les textes de pr\'e\-sen\-ta\-tion des
+soci\'et\'es savantes nous ont \'et\'e
+fournis par leurs pr\'esidents respectifs.
+
+Signalons qu'un guide est \'egalement disponible sur le site du CNRS~:
+
+\lien{www.dgdr.cnrs.fr/drh/concours/guide/guide.htm}.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\part{\^Etre enseignant-chercheur ou chercheur}
+
+\include{chap_MCF}
+\include{chap_CR_CNRS}
+\include{chap_CR_INRIA}
+\include{chap_CR_INRAE}
+\include{chap_publications}
+\include{chap_vie_famille}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\part{Les instances officielles}
+
+\include{chap_ministere}
+\include{chap_univ} 
+\include{chap_CNRS}
+\include{chap_IINRIA}
+\include{chap_INRAE}
+\include{chap_HCERES}
+\include{chap_CNU}
+\include{chap_CN_CNRS}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\part{Le financement de la recherche}
+
+\include{chap_fin_sources}
+\include{chap_fin_rec}
+\include{chap_fin_non_rec_2019}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\part{La communaut\'e math\'ematique}
+
+\include{chap_soc_sav}
+\include{chap_assoc}
+\include{chap_com}
+\include{chap_diffusion}
+
+
+
+\printindex
+
+\end{document}
