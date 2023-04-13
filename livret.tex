@@ -29,7 +29,8 @@
 \frenchbsetup{StandardLists=true} % pour eviter les conflits entre babel et enumitem
 \usepackage{makeidx, xcolor}
 \usepackage[colorlinks]{hyperref}   % choisir pour la version pdf
-\hypersetup{linkcolor=blue,urlcolor=blue}
+\hypersetup{linkcolor=blue, urlcolor=blue}
+\usepackage{xurl}
 %\usepackage{hyperref}    % choisir pour l'impression (noir et blanc)
 \usepackage{amsmath}
 %\uspackage{amssymb,amsmath,amsfonts,mathptmx}
@@ -49,9 +50,11 @@
 \renewcommand{\footrulewidth}{0.pt}
 
 % Commandes utiles
+\renewcommand*{\mp}{\textperiodcentered}
 \usepackage{xspace}
-\newcommand*{\MCF}{MCF\xspace}
-\newcommand*{\PR}{PR\xspace}
+%\newcommand*{\MCF}{MCF\xspace}
+%\newcommand*{\PR}{PR\xspace}
+%\newcommand*{\EC}{EC\xspace}
 
 
 \newcommand {\lien}[1]{{\small\tt \href{http\string://#1}{http\string://#1}}}
@@ -82,7 +85,7 @@
 
 \vfill
 
-\textbf{\Huge Livret d'accueil des math\'ematicien$\cdot$nes}
+\textbf{\Huge Livret d'accueil des math\'ematicien\mp nes}
 
 \hrule
 
@@ -125,19 +128,19 @@ et n'a aucune valeur officielle.}}
 
 \chapter*{Introduction}
 
-La journ\'ee d'accueil des nouvelles et nouveaux recrut\'e$\cdot$e$\cdot$s en math\'ematiques a pour vocation de regrouper
-tou$\cdot$te$\cdot$s les chercheur$\cdot$se$\cdot$s ainsi que les enseignant$\cdot$e$\cdot$s-chercheur$\cdot$se$\cdot$s nouvellement en poste afin de leur faire d\'ecouvrir
+La journ\'ee d'accueil des nouvelles et nouveaux recrut\'e\mp e\mp s en math\'ematiques a pour vocation de regrouper
+tou\mp te\mp s les chercheur\mp euse\mp s ainsi que les enseignant\mp e\mp s-chercheur\mp euse\mp s nouvellement en poste afin de leur faire d\'ecouvrir
 les rouages de la communaut\'e math\'ematique~: pr\'esentation des diff\'erentes carri\`eres, 
 intervention des grands acteurs (organismes de recherche, soci\'et\'es savantes, associations)
 et des solutions de financement de projets. 
 
-Organis\'ee par des b\'en\'evoles math\'ematicien$\cdot$ne$\cdot$s, cette journ\'ee permet 
-\`a ces jeunes recrut\'e$\cdot$e$\cdot$s de s'int\'egrer et de nourrir leur sentiment d'appartenance
+Organis\'ee par des b\'en\'evoles math\'ematicien\mp ne\mp s, cette journ\'ee permet 
+\`a ces jeunes recrut\'e\mp e\mp s de s'int\'egrer et de nourrir leur sentiment d'appartenance
 \`a la communaut\'e des math\'ematiques dans lequel ils ou elles s'investissent pour leur bien et le bien de leurs coll\`egues.
 L'investissement b\'en\'evole n'est en effet pas contradictoire avec la r\'eussite de la carri\`ere professionnelle,
 il y concourt et l'enrichit.
 
-Pour aider les nouveaux et nouvelles recrut\'e$\cdot$e$\cdot$s, les \'equipes successives d'organisation de cette journ\'ee
+Pour aider les nouveaux et nouvelles recrut\'e\mp e\mp s, les \'equipes successives d'organisation de cette journ\'ee
 ont r\'edig\'e et mis \`a jour ce livret, dont l'ambition est d'\^etre factuel mais qui n'a aucune valeur officielle. 
 Les diff\'erentes versions sont consultables sur le site de l'Op\'eration Postes, rubrique ``APRES''. 
 Si l'organisation future de notre communaut\'e se trouvait profond\'ement boulevers\'ee,
@@ -145,8 +148,8 @@ au point qu'une simple mise \`a jour ne soit pas
 possible, ce texte aura au moins le m\'erite de rappeler
 ce qu'elle \'etait avant ces r\'eformes.
 
-M\^eme s'il vise les nouveaux et nouvelles ma\^\i  tre$\cdot$se$\cdot$s de conf\'erences et
-charg\'e$\cdot$e$\cdot$s de recherche, ce texte est bien entendu destin\'e \`a une
+M\^eme s'il vise les nouveaux et nouvelles ma\^\i  tres de conf\'erences et
+charg\'e\mp e\mp s de recherche, ce texte est bien entendu destin\'e \`a une
 large diffusion sous forme \'electronique. Il contient notamment
 beaucoup de liens vers des sites web qui pr\'esentent en d\'etail
 des points particuliers. Nous pensons pr\'ef\'erable de renvoyer le
@@ -174,7 +177,7 @@ Signalons qu'un guide est \'egalement disponible sur le site du CNRS :
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\part{\^Etre enseignant-chercheur ou chercheur}
+\part{\^Etre enseignant\mp e - chercheur\mp euse ou chercheur\mp euse}
 
 \include{chap_01_MCF}
 \include{chap_02_CR_CNRS}
@@ -194,7 +197,7 @@ Signalons qu'un guide est \'egalement disponible sur le site du CNRS :
 \include{chap_11_INRAE}
 \include{chap_12_HCERES}
 \include{chap_13_CNU}
-\include{chap_14_CoCNRS}
+\include{chap_14_CoNRS}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
